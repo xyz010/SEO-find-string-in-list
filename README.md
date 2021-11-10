@@ -1,13 +1,18 @@
 # Comments about the implemented solution
 
 ### To build the app
-run the `main.py` file
+- To run the app, execute the `main.py` file
+- To implement unit testing, execute the `testing.py` file
+
 
 ### Assumptions
-- We assume that there is capital and lowercase sensitivity. For example the string `Hello` is different than
+- There is capital and lowercase sensitivity. For example the string `Hello` is different than
 the string `hello`.
   
-- We assume that both numbers and letters can be included in a word. For example, `helloworld2` is considered valid.
+- Both numbers and letters can be included in a word. For example, `helloworld2` is considered valid.
+
+### Design choices
+I implemented the functions as static in order to simplify the testing process.
   
 ### Algorithm
 
@@ -22,10 +27,9 @@ Since our algorithm has to check all of the values of the give strings, our impl
 has a time complexity of `O(n)` where `n` is the number of the given strings
 
 ### Space Complexity
-Although we traverse all of the given strings, we only process them one at a time. Thus, the space complexity is `O(1)`.
-
+Since we create and store one dictionary entry per word, we will have a space complexity of `O(n)` for a list of n strings.
 ### If the size of the initial string list is very large:
-due to the time complexity of `O(n)` this implementation would be slower. 
+Due to the time complexity of `O(n)` this implementation would be slower. 
 
 ### If the number of *find* requests gets extremely large:
-we could alter our approach in order to..
+We could scale our implementation horizontally by adding more computing nodes and by distributing our traffic with an efficient load balancer.
