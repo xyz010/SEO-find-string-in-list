@@ -1,6 +1,10 @@
-# Andreas Loutzidis
+# (C) Andreas Loutzidis 2021
 
-# This is an assignment for Stylight
+"""
+    This is class that checkes whether an input string belongs to a list of strings
+    either as-is or at any given order. For example the word "toy" belongs to the list
+    ["car", "world", "yto"]
+"""
 
 
 class MatchingString:

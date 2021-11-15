@@ -1,6 +1,10 @@
 import unittest
 import main
 
+"""
+    This script is to perform unit testing on edge cases and check correct function of every module
+"""
+
 class FindMatchingStringsTest(unittest.TestCase):
 
     def assignment_test(self):
